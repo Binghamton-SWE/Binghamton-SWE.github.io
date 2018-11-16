@@ -16,6 +16,20 @@
   float: left;
   width: 50%;
 }
+ .row > .column {
+  padding: 0 4px;
+}
+
+.row.col-centered > [class*='col-'] { 
+    display: inline-block;
+    float: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   </style>
 </head>
 <body>
@@ -52,20 +66,24 @@
     </ul>
   </div>  
 </nav>
-<body>
-	<div class="container-fluid" style="margin-top:30px">
-		<center>
-			<iframe src="https://calendar.google.com/calendar/b/3/embed?title=SWE%20Events%20Calendar%202018-2019&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=binghamton.edu_mmlfjq7a0i6j8hgcj8rglgqtqg%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-		</center>
-		<center><h1>UPCOMING</h1></center>
-		<div class="column">
-			<img src="flyers/internship panel.jpg" style="width:80%">
-		</div>
-		<div class="column">
-			<img src="flyers/Paint & Sip.jpg" style="width:80%">
-		</div>
-	</div>
-</body>
+
+<div class="container-fluid" style="margin-top:30px;margin-bottom:30px">
+	<center>
+		<iframe src="https://calendar.google.com/calendar/b/3/embed?title=SWE%20Events%20Calendar%202018-2019&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=binghamton.edu_mmlfjq7a0i6j8hgcj8rglgqtqg%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	</center>
+</div>
+<div class="container-fluid" style="margin-top:30px;margin-bottom:30px">
+	<center><h1 style="padding-bottom:30px">Flyers</h1>
+	<div class="row">
+	  <div class="column">
+		  <img src="flyers/Paint & Sip.jpg" style="width:75%">
+	  </div>
+	  <div class="column">
+		  <img src="flyers/internship panel.jpg" style="width:75%">
+	  </div>
+	</div><center>
+</div>
+
 
 <div class="jumbotron text-center" style="margin-bottom:0">
 	<ul class="fa-ul">
